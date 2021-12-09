@@ -438,10 +438,45 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 900px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: auto;
+  max-width: 1580px;
   margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* HEADER */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__right {
+  width: 255px;
+  height: 56px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #00A9D1;
 }
 /*# sourceMappingURL=main.css.map */

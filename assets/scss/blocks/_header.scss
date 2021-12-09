@@ -1,0 +1,41 @@
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// .header__left {
+
+// }
+.header__right {
+    width: 255px;
+    height: 56px;
+    object-fit: contain;
+}
+
+// .nav {
+
+// }
+.nav__list {
+    @include list-unstyled;
+
+}
+// .nav__item {
+// }
+.nav__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #00A9D1;
+}
+// .auth-btn {
+// }
+// .button {
+// }
+// .button--primary {
+// }
+// .button--outlined {
+// }

@@ -4,15 +4,15 @@ header {
     border-radius: 0px;
 }
 
-.header{
-    margin-bottom: 20px;
-}
+// .header{
+// }
 
 .header__inner{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 48px;
+    margin-bottom: 70px;
 }
 
 .header__left {
@@ -42,7 +42,6 @@ header {
 .nav__item {
     margin-right: 70px;
     position: relative;
-    transition: width ease 3;
 
     &::before{
         content: "";
@@ -55,7 +54,7 @@ header {
         margin: auto;
         background: #00A9D1;
         border-radius: 20px;
-        transition: width ease 3;
+        transition: width ease .3s;
 
     }
 
@@ -114,4 +113,77 @@ header {
         color: #fff;
         background: #00A9D1;
     }
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__left {
+    display: flex;
+    flex-direction: column;
+}
+.hero__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 132.52%;
+    color: #00A9D1;
+    max-width: 640px;
+    margin-bottom: 30px;
+}
+.hero__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 176.5%;
+    color: #034959;  
+    max-width: 551px;
+    margin-bottom: 167px;
+}
+.hero__apps {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(37px);
+    border-radius: 35px;
+    padding: 28px 35px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 160px;
+}
+.app {
+}
+.app__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(29, 30, 30, 0.52);
+    margin-bottom: 17px;
+}
+.app__links {
+    display: flex;
+    align-items: center;
+}
+.app__link {
+    transition: all ease-in .3s;
+
+    &:first-child{
+        margin-right: 13px;
+    }
+
+    &:hover{
+        transform: translateY(-5px);
+    }
+}
+.app__img {
+    object-fit: contain;
+}
+.hero__right {
+    margin-bottom: 87px;
+}
+.hero__right-img {
 }

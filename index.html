@@ -4,29 +4,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/main.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
   <title>drugsnote</title>
 </head>
 <body>
   <header>
-    <div class="header">
-      <div class="header__left">
-        <img src="header__logo" alt="">
-      </div>
-      <div class="header__right">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Help</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Language</a></li>
-          </ul>
-        </nav>
-        <div class="auth-btn">
-          <a href="#" class="button button--primary"></a>
-          <a href="#" class="button button--outlined"></a>
+    <section class="header">
+      <h2 class="visually-hidden">header</h2>
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="header__left">
+            <img src="./assets/images/logo/header-logo.svg" class="header__logo" alt="drugstone logo">
+          </a>
+          <div class="header__right">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Help</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Language</a></li>
+              </ul>
+            </nav>
+            <div class="auth-btn">
+              <a href="#" class="button button--primary">Login</a>
+              <a href="#" class="button button--outlined">Sing up</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="hero">
+      <div class="hero__left">
+        <h1 class="hero__title">Be reminded of your daily intake of medicine</h1>
+        <p class="hero__desc">Drugsnote: Your personal pill reminder and medication tracker app.</p>
+        <div class="hero__apps app">
+          <div class="app__desc">Download the app now for free</div>
+          <div class="app__links">
+            <a href="#" class="app__link"><img src="" alt="google play" class="app__img"></a>
+            <a href="#" class="app__link"><img src="" alt="app store" class="app__img"></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__right">
+        <img src="" class="hero__right-img" alt="hero phone image">
+      </div>
+
+
+    </section>
   </header>
 
 </body>

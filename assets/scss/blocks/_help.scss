@@ -1,0 +1,55 @@
+.help {
+    margin-bottom: 195px;
+}
+.help__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 89px 120px;
+    // background-color: rgba(255, 255, 255, 0.8);
+    background: url("../../images/img/Mask-Group2.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(87px);
+    border-radius: 120px;
+}
+.help__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+    color: #10A6C9;
+    margin-bottom: 30px;
+}
+.help__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+    color: #123D53;
+    max-width: 607px;
+    margin-bottom: 60px;
+}
+.help__contacts {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 30px;
+    color: #10A6C9;
+    margin-bottom: 43px;
+}
+.help__number, .help__email {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    color: #123D53;
+    margin-bottom: 11px;
+}
+.help__email {
+    &::before{
+        content: "";
+    }
+}

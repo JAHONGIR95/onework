@@ -1,16 +1,15 @@
 /* HEADER */
 header {
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    // background-image: url('../../images/img/hero-bg.png');
     background: linear-gradient(330.96deg, #FFFFFF -9.19%, #CBF5FF 33.38%, rgba(255, 255, 255, 0.17) 111.72%);
-    border-radius: 0px;
     margin-bottom: 160px;
 }
 
-// .header{
-// }
+.header{
+//   background-image: url('../images/img/mask-group3.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
 
 .header__inner{
     display: flex;
@@ -253,6 +252,10 @@ header {
 .hero__right-img {
 }
 
+.burger-menu{
+    display: none;
+}
+
 /* break point */
 @include breakpoint-down(1024px){
     header{
@@ -316,6 +319,9 @@ header {
 
 // BREAK POINT MOBILE
 @include breakpoint-down(576px){
+    .burger-menu{
+        display: block;
+    }
     .header__inner{
         margin-top: 30px;
         margin-bottom: 55px;

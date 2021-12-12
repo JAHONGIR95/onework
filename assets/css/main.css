@@ -473,10 +473,7 @@ img {
 /* HEADER */
 header {
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
   background: linear-gradient(330.96deg, #FFFFFF -9.19%, #CBF5FF 33.38%, rgba(255, 255, 255, 0.17) 111.72%);
-  border-radius: 0px;
   margin-bottom: 160px;
 }
 
@@ -797,6 +794,10 @@ header {
   margin-bottom: 87px;
 }
 
+.burger-menu {
+  display: none;
+}
+
 /* break point */
 @media only screen and (max-width: 1024px) {
   header {
@@ -853,6 +854,9 @@ header {
 }
 
 @media only screen and (max-width: 576px) {
+  .burger-menu {
+    display: block;
+  }
   .header__inner {
     margin-top: 30px;
     margin-bottom: 55px;

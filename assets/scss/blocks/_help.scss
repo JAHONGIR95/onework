@@ -2,18 +2,19 @@
     margin-bottom: 195px;
 }
 .help__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    background-image: url('../../images/img/mask-group3.jpg');
+    // background-image: url('../../images/img/Mask-Group2.png');
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: start;
     padding: 89px 120px;
-    // background-color: rgba(255, 255, 255, 0.8);
-    background: url("../../images/img/Mask-Group2.png");
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: contain;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
-    backdrop-filter: blur(87px);
     border-radius: 120px;
+    backdrop-filter: blur(87px);
+    // background-color: rgba(255, 255, 255, 0.8);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px auto;
 }
 .help__title {
     font-style: normal;
@@ -41,15 +42,60 @@
     margin-bottom: 43px;
 }
 .help__number, .help__email {
+    position: relative;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
     line-height: 30px;
     color: #123D53;
     margin-bottom: 11px;
+    display: block;
 }
 .help__email {
     &::before{
         content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 22;
+        height: 17px;
+        background-image: url('../../images/icons/email-icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: auto;
+    }
+}
+
+@include breakpoint-down(1024px){
+    .help{
+        margin-bottom: 144px;
+    }
+    .help__inner{
+        padding: 45px 70px;
+        border-radius: 100px;
+    }
+    .help__title {
+        font-size: 26px;
+        line-height: 31px;
+        margin-bottom: 15px;
+    }
+    .help__desc {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 371px;
+        margin-bottom: 30px;
+    }
+    .help__contacts {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .help__number, .help__email {
+        font-size: 16px;
+        line-height: 30px;
+        color: #123D53;
+        margin-bottom: 2px;
     }
 }

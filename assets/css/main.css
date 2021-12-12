@@ -454,8 +454,27 @@ img {
   margin-right: auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 918px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 576px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 /* HEADER */
 header {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background: linear-gradient(330.96deg, #FFFFFF -9.19%, #CBF5FF 33.38%, rgba(255, 255, 255, 0.17) 111.72%);
   border-radius: 0px;
   margin-bottom: 160px;
@@ -512,6 +531,12 @@ header {
 }
 
 .nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 70px;
   position: relative;
 }
@@ -523,7 +548,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -9px;
+  bottom: -10px;
   margin: auto;
   background: #00A9D1;
   border-radius: 20px;
@@ -533,17 +558,81 @@ header {
 
 .nav__item:hover::before {
   width: 16px;
-  -webkit-transition: width ease 3;
-  transition: width ease 3;
 }
 
 .nav__link {
   text-decoration: none;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 22px;
   line-height: 27px;
+  color: #034959;
+}
+
+.nav__link:hover {
   color: #00A9D1;
+}
+
+.nav__lang {
+  position: relative;
+}
+
+.nav__lang:hover .langs__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.langs__wrapper {
+  position: absolute;
+  top: 50px;
+  right: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 460px;
+  background: #FFFFFF;
+  border-radius: 17px;
+  overflow: hidden;
+  display: none;
+}
+
+.langs__wrapper:hover .nav__lang-menu {
+  color: #00A9D1;
+}
+
+.lang__link {
+  width: calc(100% / 5);
+  padding: 15px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140.02%;
+  color: #034959;
+}
+
+.lang__link:hover {
+  background: rgba(73, 219, 252, 0.24);
+}
+
+.lang__link.active {
+  background: #00A9D1;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+  color: #FFFFFF;
 }
 
 .auth-btn {
@@ -662,6 +751,10 @@ header {
   margin-bottom: 160px;
 }
 
+.app__responsive {
+  display: none;
+}
+
 .app__desc {
   font-style: normal;
   font-weight: normal;
@@ -695,12 +788,124 @@ header {
 }
 
 .app__img {
+  width: 205px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .hero__right {
   margin-bottom: 87px;
+}
+
+/* break point */
+@media only screen and (max-width: 1024px) {
+  header {
+    margin-bottom: 72px;
+  }
+  .header__inner {
+    margin-top: 46px;
+  }
+  .header__left {
+    width: 167px;
+    height: 36px;
+  }
+  .nav__item {
+    margin-right: 42px;
+  }
+  .nav__link {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .button {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 13px 23px;
+  }
+  .hero__title {
+    font-size: 30px;
+    line-height: 132%;
+    max-width: 406px;
+    margin-bottom: 17px;
+  }
+  .hero__desc {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 276px;
+    margin-bottom: 92px;
+  }
+  .hero__apps {
+    padding: 15px 24px;
+  }
+  .app__desc {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 13px;
+  }
+  .app__link:first-child {
+    margin-right: 7px;
+  }
+  .app__img {
+    width: 123px;
+  }
+  .hero__right {
+    margin-bottom: 81px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header__inner {
+    margin-top: 30px;
+    margin-bottom: 55px;
+  }
+  .header__left {
+    width: 124px;
+    height: auto;
+  }
+  .header__right {
+    display: none;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .hero__left {
+    margin-bottom: 35px;
+  }
+  .hero__title {
+    max-width: 243px;
+  }
+  .hero__desc {
+    max-width: 243px;
+    margin-bottom: 0;
+  }
+  .app {
+    display: none;
+  }
+  .app__responsive {
+    display: block;
+  }
+  .hero__right {
+    width: 100%;
+  }
+  .hero__right-img {
+    width: 100%;
+  }
+  .hero__apps {
+    padding: 10px 28px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+  }
+  .app__desc {
+    margin-bottom: 8px;
+  }
+  .app__img {
+    width: 135px;
+  }
 }
 
 .about {
@@ -764,7 +969,33 @@ header {
 
 .about__right {
   max-width: 741px;
-  height: 659px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about {
+    margin-bottom: 100px;
+  }
+  .about__inner {
+    padding: 50px 0 50px 74px;
+    border-radius: 100px;
+  }
+  .about__info-block {
+    max-width: 395px;
+  }
+  .about__info-block:first-child {
+    margin-bottom: 23px;
+    max-width: 451px;
+  }
+  .about__title {
+    font-size: 26px;
+    line-height: 31px;
+    margin-bottom: 10px;
+  }
+  .about__desc {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 411px;
+  }
 }
 
 .pills__inner {
@@ -904,7 +1135,7 @@ header {
 
 .download__img {
   width: 229px;
-  height: 73px;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -915,31 +1146,47 @@ header {
   top: -84px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .download {
+    margin-bottom: 140px;
+    border-radius: 50px;
+  }
+  .download__inner {
+    padding: 20px 74px;
+  }
+  .download__title {
+    font-size: 26px;
+    line-height: 31px;
+    margin-bottom: 13px;
+  }
+  .download__link:first-child {
+    margin-right: 10px;
+  }
+  .download__img {
+    width: 165px;
+  }
+  .wooden-iphone {
+    width: 224px;
+    right: 75px;
+    top: -54px;
+  }
+}
+
 .help {
   margin-bottom: 195px;
 }
 
 .help__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  background-image: url("../../images/img/mask-group3.jpg");
   padding: 89px 120px;
-  background: url("../../images/img/Mask-Group2.png");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: contain;
   -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
+  border-radius: 120px;
   -webkit-backdrop-filter: blur(87px);
           backdrop-filter: blur(87px);
-  border-radius: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px auto;
 }
 
 .help__title {
@@ -971,16 +1218,61 @@ header {
 }
 
 .help__number, .help__email {
+  position: relative;
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
   line-height: 30px;
   color: #123D53;
   margin-bottom: 11px;
+  display: block;
 }
 
 .help__email::before {
   content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 22;
+  height: 17px;
+  background-image: url("../../images/icons/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .help {
+    margin-bottom: 144px;
+  }
+  .help__inner {
+    padding: 45px 70px;
+    border-radius: 100px;
+  }
+  .help__title {
+    font-size: 26px;
+    line-height: 31px;
+    margin-bottom: 15px;
+  }
+  .help__desc {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 371px;
+    margin-bottom: 30px;
+  }
+  .help__contacts {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .help__number, .help__email {
+    font-size: 16px;
+    line-height: 30px;
+    color: #123D53;
+    margin-bottom: 2px;
+  }
 }
 
 footer {
@@ -1021,7 +1313,7 @@ footer {
 
 .footer__logo {
   width: 215px;
-  height: 47px;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1188,7 +1480,7 @@ footer {
 .devider {
   width: 100%;
   display: block;
-  border: 0.5px solid rgba(255, 255, 255, 0.64);
+  border: 0.3px solid rgba(255, 255, 255, 0.64);
   margin: 47px 0;
 }
 
@@ -1223,7 +1515,7 @@ footer {
 
 .footer__app-img {
   width: 191px;
-  height: 61px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: -webkit-transform ease-in .3s;
@@ -1235,5 +1527,64 @@ footer {
 .footer__app-img:hover {
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer__logo {
+    width: 113px;
+  }
+  .footer__about {
+    margin-right: 60px;
+  }
+  .footer__about-title, .langs__title, .footer__help-title {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 31px;
+  }
+  .footer__about-desc {
+    max-width: 119px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .lang {
+    font-size: 12px;
+    line-height: 220%;
+  }
+  .footer__help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 35px;
+  }
+  .footer__help-phone, .footer__help-email {
+    font-size: 12px;
+    line-height: 220%;
+  }
+  .footer__media {
+    min-height: 180px;
+  }
+  .footer__login {
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 21px;
+  }
+  .social__network {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+  .webtech {
+    width: 95px;
+  }
+  .footer__app {
+    margin-left: 7px;
+  }
+  .footer__app-img {
+    width: 109px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

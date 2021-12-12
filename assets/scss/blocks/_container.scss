@@ -7,3 +7,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@include breakpoint-down(1024px){
+  .container{
+    max-width: 918px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@include breakpoint-down(576px){
+  .container{
+    max-width: 576px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+

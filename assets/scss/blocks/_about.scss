@@ -39,7 +39,38 @@
 }
 .about__right {
     max-width: 741px;
-    height: 659px;
+    // height: 659px;
 }
 .about__img {
+}
+
+@include breakpoint-down(1024px){
+    .about{
+        margin-bottom: 100px;
+    }
+    .about__inner {
+        padding: 50px 0 50px 74px;
+        border-radius: 100px;
+    }
+    .about__info-block {
+        max-width: 395px;
+        &:first-child{
+            margin-bottom: 23px;
+            max-width: 451px;
+        }
+    }
+    .about__title {
+        font-size: 26px;
+        line-height: 31px;
+        margin-bottom: 10px;
+    }
+    .about__desc {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 411px;
+
+    }
+    .about__right{
+        // max-width: 390px;
+    }
 }

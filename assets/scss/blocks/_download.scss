@@ -1,8 +1,6 @@
 .download {
     margin-bottom: 195px;
 }
-.container {
-}
 .download__inner {
     display: flex;
     align-items: center;justify-content: space-between;
@@ -40,7 +38,7 @@
 }
 .download__img {
     width: 229px;
-    height: 73px;
+    height: auto;
     object-fit: contain;
 }
 .download__empty {
@@ -49,4 +47,33 @@
     position: absolute;
     right: 136px;
     top: -84px;
+}
+
+// break point
+@include breakpoint-down(1024px){
+    .download {
+        margin-bottom: 140px;
+        border-radius: 50px;
+    }
+    .download__inner {
+        padding: 20px 74px;
+    }
+    .download__title {
+        font-size: 26px;
+        line-height: 31px;
+        margin-bottom: 13px;
+    }
+    .download__link {
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+    .download__img {
+        width: 165px;
+    }
+    .wooden-iphone {
+        width: 224px;
+        right: 75px;
+        top: -54px;
+    }
 }

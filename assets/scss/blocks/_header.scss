@@ -1,5 +1,9 @@
 /* HEADER */
 header {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-image: url('../../images/img/hero-bg.png');
     background: linear-gradient(330.96deg, #FFFFFF -9.19%, #CBF5FF 33.38%, rgba(255, 255, 255, 0.17) 111.72%);
     border-radius: 0px;
     margin-bottom: 160px;
@@ -41,6 +45,8 @@ header {
 }
 
 .nav__item {
+    display: flex;
+    align-items: center;
     margin-right: 70px;
     position: relative;
 
@@ -51,29 +57,83 @@ header {
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -9px;
+        bottom: -10px;
         margin: auto;
         background: #00A9D1;
         border-radius: 20px;
         transition: width ease .3s;
-
     }
 
     &:hover::before{
         width: 16px;
-        transition: width ease 3;
-
     }
 }
 
 .nav__link {
     text-decoration: none;
     font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 22px;
     line-height: 27px;
-    color: #00A9D1;
+    color: #034959;
+
+    &:hover{
+        color: #00A9D1;
+    }
 }
+// .nav__about{
+//     color: #00A9D1;
+//     font-weight: 500;
+// }
+.nav__lang{
+    position: relative;
+    // padding-bottom: 26px;
+
+    &:hover .langs__wrapper{
+        display: flex;
+    }
+}
+.langs__wrapper {
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    display: flex;
+    align-items: center;
+    width: 460px;
+    background: #FFFFFF;
+    border-radius: 17px;
+    overflow: hidden;
+    display: none;
+
+    &:hover .nav__lang-menu{
+        color: #00A9D1;
+    }
+}
+.lang__link {
+    width: calc(100% / 5);
+    padding: 15px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140.02%;
+    color: #034959;
+
+    &:hover{
+        background: rgba(73, 219, 252, 0.24);
+        // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    }
+}
+.lang__link.active {
+    background: #00A9D1;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+// AUTH
 .auth-btn {
     display: flex;
 }
@@ -157,6 +217,9 @@ header {
 }
 .app {
 }
+.app__responsive{
+    display: none;
+}
 .app__desc {
     font-style: normal;
     font-weight: normal;
@@ -181,10 +244,126 @@ header {
     }
 }
 .app__img {
+    width: 205px;
     object-fit: contain;
 }
 .hero__right {
     margin-bottom: 87px;
 }
 .hero__right-img {
+}
+
+/* break point */
+@include breakpoint-down(1024px){
+    header{
+        margin-bottom: 72px;
+    }
+
+    .header__inner{
+        margin-top: 46px;
+    }
+    .header__left {
+        width: 167px;
+        height: 36px;
+    }
+
+    .nav__item{
+        margin-right: 42px;
+    }
+    .nav__link{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .button {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 13px 23px;
+    }
+
+    .hero__title {
+        font-size: 30px;
+        line-height: 132%;
+        max-width: 406px;
+        margin-bottom: 17px;
+    }
+    .hero__desc {
+        font-size: 18px;
+        line-height: 150%; 
+        max-width: 276px;
+        margin-bottom: 92px;
+    }
+    .hero__apps {
+        padding: 15px 24px;
+    }
+    .app__desc{
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 13px;
+    }
+    .app__link {
+        &:first-child{
+            margin-right: 7px;
+        }
+    }
+    .app__img{
+        width: 123px;
+    }
+    .hero__right {
+        margin-bottom: 81px;
+    }
+}
+
+// BREAK POINT MOBILE
+@include breakpoint-down(576px){
+    .header__inner{
+        margin-top: 30px;
+        margin-bottom: 55px;
+    }
+    .header__left {
+        width: 124px;
+        height: auto;
+    }
+    .header__right{
+        display: none;
+        // margin-bottom: 28px;
+    }
+    .hero{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero__left{
+        margin-bottom: 35px;
+    }
+    .hero__title {
+        max-width: 243px;
+    }
+    .hero__desc {
+        max-width: 243px;
+        margin-bottom: 0;
+    }
+    .app{
+        display: none;
+    }
+    .app__responsive{
+        display: block;
+    }
+    .hero__right{
+        width: 100%;
+    }
+
+    .hero__right-img{
+        width: 100%;
+    }
+    .hero__apps{
+        padding: 10px 28px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+    .app__desc{
+        margin-bottom: 8px;
+    }
+    .app__img{
+        width: 135px;
+    }
 }

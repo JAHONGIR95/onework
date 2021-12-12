@@ -17,7 +17,7 @@ footer{
 }
 .footer__logo {
     width: 215px;
-    height: 47px;
+    height: auto;
     object-fit: contain;
 }
 .footer__auth-res {
@@ -136,7 +136,7 @@ footer{
 .devider {
     width: 100%;
     display: block;
-    border: 0.5px solid rgba(255, 255, 255, 0.64);
+    border: 0.3px solid rgba(255, 255, 255, 0.64);
     margin: 47px 0;
 }
 .footer__bottom {
@@ -156,11 +156,68 @@ footer{
 }
 .footer__app-img {
     width: 191px;
-    height: 61px;
+    height: auto;
     object-fit: cover;
     transition: transform ease-in .3s;
 
     &:hover{
         transform: translateY(-7px)
     }
+}
+
+// breakpoint 
+@include breakpoint-down(1024px){
+    .footer__logo {
+        width: 113px;
+    }
+
+    .footer__about {
+        margin-right: 60px;
+    }
+    .footer__about-title, .langs__title, .footer__help-title {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 31px;
+    }
+    .footer__about-desc {
+        max-width: 119px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .lang {
+        font-size: 12px;
+        line-height: 220%;
+    }
+    .footer__help {
+        display: flex;
+        flex-direction: column;
+        margin-right: 35px;
+    }
+    .footer__help-phone, .footer__help-email {
+        font-size: 12px;
+        line-height: 220%;
+    }
+    .footer__media {
+        min-height: 180px;
+    }
+    .footer__login {
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 21px;
+    }
+    .social__network {
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+    }
+    .webtech {
+        width: 95px;
+    }
+    .footer__app {
+        margin-left: 7px;
+    }
+    .footer__app-img {
+        width: 109px;
+    }
+    
 }

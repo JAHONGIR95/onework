@@ -2,19 +2,24 @@
 
 .side__nav {
     width: 100vw;
-    height: 100vh;
+    height: 0;
     background: rgba(18, 61, 83, 0.56);
     position: absolute;
-    padding-top: 42px;
-}
-.container {
+    transition: height ease-in .7s;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
 
+    &.open{
+        height: 100vh;
+    }
 }
+
 .side__close {
     margin-bottom: 32px; 
     display: block;
     margin-right: 0;
     margin-left: auto;
+    padding-top: 42px;
 }
 .auth-btn-res{
     display: flex;
@@ -108,11 +113,19 @@
     }
 }
 .side__langs-btn {
+    transition: transform ease-in .5s;
+    &.rotate{
+        transform: rotate(90deg)
+    }
 }
 .side__langs-pointer {
 }
 .side__langs-wrapper {
-
+    height: 0;
+    transition: height ease-in .5s;
+    &.open{
+        height: 286px;
+    }
 }
 .side__lang {
     padding: 15px 13px;

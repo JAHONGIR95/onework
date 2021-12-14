@@ -50,21 +50,35 @@
     color: #123D53;
     margin-bottom: 11px;
     display: block;
-}
-.help__email {
+
     &::before{
         content: "";
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
-        bottom: 0;
-        width: 22;
-        height: 17px;
-        background-image: url('../../images/icons/email-icon.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        bottom: 0;    
         margin: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.help__number{
+    padding-left: 30px;
+    &::before{
+        width: 22px;
+        height: 19px;
+        background-image: url('../images/icons/phone-icon.svg');
+    }
+}
+
+.help__email{
+    padding-left: 30px;
+    &::before{
+        width: 22px;
+        height: 17px;
+        background-image: url('../images/icons/email-icon.svg');
     }
 }
 
@@ -97,5 +111,47 @@
         line-height: 30px;
         color: #123D53;
         margin-bottom: 2px;
+    }
+}
+
+// BREAKPOINT FOR MOBILE DESIGN
+@include breakpoint-down(578px){
+
+    .help{
+        margin-bottom: 30px;
+    }
+    .help__inner {
+        background-image: url('../../images/img/mask-group3.jpg');
+        // background-image: url('../../images/img/Mask-Group2.png');
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: start;
+        padding: 29px 34px;
+        border-radius: 40px;
+        // background-color: rgba(255, 255, 255, 0.8);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 500px auto;
+    }
+    .help__title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    .help__desc {
+        font-size: 14px;
+        line-height: 25px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .help__contacts {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    .help__number, .help__email {
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 5px;
     }
 }

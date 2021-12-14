@@ -74,3 +74,32 @@
         // max-width: 390px;
     }
 }
+
+// BREAK POINTS FOR MOBILE DEVICE
+@include breakpoint-down(578px){
+    .about__inner {
+        justify-content: center;
+        flex-direction: column;
+        padding: 33px 29px 0 29px;
+        border-radius: 35px;
+    }
+    .about__info-block {
+        max-width: 100%;
+        &:first-child{
+            margin-bottom: 25px;
+            max-width: 100%;
+        }
+    }
+    .about__title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .about__desc {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .about__right {
+        max-width: 100%;
+    }
+}

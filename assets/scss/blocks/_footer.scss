@@ -1,40 +1,57 @@
-footer{
+footer {
     background-color: #023047;
 }
+
 .footer {
     padding: 48px 0 44px 0;
     display: flex;
     flex-direction: column;
 }
-.footer__inner{
+
+.footer__inner {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
+
 .pair {
     display: flex;
     align-items: flex-start;
 }
+
 .footer__logo {
     width: 215px;
     height: auto;
     object-fit: contain;
 }
+
 .footer__auth-res {
     display: none;
 }
+
 .footer__login-res {
-
+    font-size: 12px;
+    color: #fff;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 33.5px;
+    margin-right: 15px;
 }
+
 .footer__signin-res {
-
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.64);
 }
+
 .footer__about {
     display: flex;
     flex-direction: column;
     margin-right: 127px;
 }
-.footer__about-title, .langs__title, .footer__help-title {
+
+.footer__about-title,
+.langs__title,
+.footer__help-title {
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -42,6 +59,7 @@ footer{
     color: #FFFFFF;
     margin-bottom: 31px;
 }
+
 .footer__about-desc {
     max-width: 180px;
     font-style: normal;
@@ -50,17 +68,19 @@ footer{
     line-height: 35px;
     color: rgba(255, 255, 255, 0.64);
 }
+
 .footer__langs {
     display: flex;
     flex-direction: column;
 }
-.langs__title {
 
-}
+.langs__title {}
+
 .langs__list {
     display: flex;
     flex-direction: column;
 }
+
 .lang {
     font-style: normal;
     font-weight: normal;
@@ -69,43 +89,48 @@ footer{
     color: rgba(255, 255, 255, 0.64);
     transition: color ease-in .2s;
 
-    &:hover{
+    &:hover {
         color: #fff;
     }
 }
+
 .footer__help {
     display: flex;
     flex-direction: column;
     margin-right: 200px;
 }
-.footer__help-title {
-    
-}
-.footer__help-phone, .footer__help-email {
+
+.footer__help-title {}
+
+.footer__help-phone,
+.footer__help-email {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 220%;
     color: rgba(255, 255, 255, 0.64);
     transition: color ease-in .2s;
-    &:hover{
+
+    &:hover {
         color: #fff;
     }
 }
-.footer__help-email {
-}
+
+.footer__help-email {}
+
 .footer__media {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
     min-height: 280px;
-    
 }
+
 .footer__auth {
     display: flex;
     align-items: center;
 }
+
 .footer__login {
     font-style: normal;
     font-weight: 500;
@@ -114,14 +139,26 @@ footer{
     color: #FFFFFF;
     margin-left: 43px;
     transition: opacity ease-in .2s;
-    &:hover{
+
+    &:hover {
         opacity: .8;
     }
 }
+
+.footer__social-title {
+    display: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
 .footer__social {
     display: flex;
     align-items: center;
 }
+
 .social__network {
     width: 39px;
     height: 39px;
@@ -129,44 +166,50 @@ footer{
     margin-left: 9px;
     transition: transform ease-in .3s;
 
-    &:hover{
+    &:hover {
         transform: translateY(-7px)
     }
 }
+
 .devider {
     width: 100%;
     display: block;
     border: 0.3px solid rgba(255, 255, 255, 0.64);
     margin: 47px 0;
 }
+
 .footer__bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .webtech {
     width: 130px;
 }
+
 .footer__apps {
     display: flex;
     align-items: center;
 }
+
 .footer__app {
     margin-left: 13px;
 }
+
 .footer__app-img {
     width: 191px;
     height: auto;
     object-fit: cover;
     transition: transform ease-in .3s;
 
-    &:hover{
+    &:hover {
         transform: translateY(-7px)
     }
 }
 
 // breakpoint 
-@include breakpoint-down(1024px){
+@include breakpoint-down(1024px) {
     .footer__logo {
         width: 113px;
     }
@@ -174,50 +217,153 @@ footer{
     .footer__about {
         margin-right: 60px;
     }
-    .footer__about-title, .langs__title, .footer__help-title {
+
+    .footer__about-title,
+    .langs__title,
+    .footer__help-title {
         font-size: 14px;
         line-height: 17px;
         margin-bottom: 31px;
     }
+
     .footer__about-desc {
         max-width: 119px;
         font-size: 12px;
         line-height: 20px;
     }
+
     .lang {
         font-size: 12px;
         line-height: 220%;
     }
+
     .footer__help {
         display: flex;
         flex-direction: column;
         margin-right: 35px;
     }
-    .footer__help-phone, .footer__help-email {
+
+    .footer__help-phone,
+    .footer__help-email {
         font-size: 12px;
         line-height: 220%;
     }
+
     .footer__media {
         min-height: 180px;
     }
+
     .footer__login {
         font-size: 14px;
         line-height: 17px;
         margin-left: 21px;
     }
+
     .social__network {
         width: 25px;
         height: 25px;
         margin-left: 5px;
     }
+
     .webtech {
         width: 95px;
     }
+
     .footer__app {
         margin-left: 7px;
     }
+
     .footer__app-img {
         width: 109px;
     }
-    
+}
+
+// BREAK POINT FOR MOBILE
+@include breakpoint-down(578px) {
+
+    .footer {
+        padding: 39px 0 35px 0;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+    }
+
+    .pair {
+        width: 100%;
+        align-items: start;
+        justify-content: space-between;
+
+        &:first-child {
+            align-items: center;
+            padding-bottom: 20px;
+            margin-bottom: 26px;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 36px;
+        }
+    }
+
+    .footer__logo {
+        width: 92px;
+    }
+
+    .footer__auth-res {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__auth {
+        display: none;
+    }
+
+    .footer__about {
+        margin: 0;
+    }
+
+    .footer__about-title,
+    .langs__title,
+    .footer__help-title {
+        margin-bottom: 17px;
+    }
+
+    .footer__about-desc {
+        max-width: 150px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .langs__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 160px;
+    }
+
+    .lang {
+        margin-right: 10px;
+    }
+    .footer__social-title{
+        display: block;
+    }
+    .footer__media {
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 86px;
+    }
+    .devider{
+        margin: 30px 0 20px 0;
+    }
+    .social__network {
+        width: 22px;
+        height: 22px;
+        margin-left: 4px;
+    }
+    .webtech {
+        width: 70px;
+    }
+    .footer__app-img {
+        width: 100px;
+    }
 }

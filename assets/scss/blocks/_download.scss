@@ -77,3 +77,32 @@
         top: -54px;
     }
 }
+
+// BREAK POINT FOR MOBILE DESIGN
+@include breakpoint-down(578px){
+    .download{
+        margin-bottom: 52px;
+    }
+    .download__inner {
+        border-radius: 13px;
+        padding: 11px 12px;
+    }
+    .download__title {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 8px;
+    }
+    .download__link {
+        &:first-child {
+            margin-right: 5px;
+        }
+    }
+    .download__img {
+        width: 90px;
+    }
+    .wooden-iphone {
+        right: 12px;
+        width: 103px;
+        top: -11.8px;
+    }
+}

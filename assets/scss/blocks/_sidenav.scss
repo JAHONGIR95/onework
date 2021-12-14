@@ -1,0 +1,151 @@
+/* SIDENAV */
+
+.side__nav {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(18, 61, 83, 0.56);
+    position: absolute;
+    padding-top: 42px;
+}
+.container {
+
+}
+.side__close {
+    margin-bottom: 32px; 
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+}
+.auth-btn-res{
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+}
+.side__button, .side__button--outlined{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 14px 26px;
+    background: #07BCE7;
+    box-shadow: 0px 4px 10px 5px rgba(7, 188, 231, 0.05);
+    border-radius: 30px;
+    margin-right: 8px;
+    }
+.side__button--outlined {
+    color: #049DC1;
+    background: #FFFFFF;
+}
+
+.side__about, .side__langs-main, .side__help {
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side__about, .side__langs, .side__help{
+    margin-bottom: 10px;
+    border-radius: 19px;
+    overflow: hidden;
+}
+.side__about-title, .side__langs-title, .side__help-title {
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #01202F;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+.side__about-title{
+    padding-left: 33px;
+
+    &::before{
+        width: 18px;
+        height: 18px;
+        background-image: url('../images/icons/about-res.svg');
+    }
+}
+.side__about-btn, .side__langs-btn, .side__help-btn {
+    width: 23px;
+    height: 23px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05)
+}
+.side_about-pointer, .side__langs-pointer, .side_help-pointer {
+    padding: 6px 8px;
+    display: inline-block;
+}
+.side__langs {
+    
+}
+.side__langs-main {
+
+}
+.side__langs-title {
+    padding-left: 33px;
+   
+    &::before{
+        width: 20px;
+        height: 18px;
+        background-image: url('../images/icons/translation.svg');
+    }
+}
+.side__langs-btn {
+}
+.side__langs-pointer {
+}
+.side__langs-wrapper {
+
+}
+.side__lang {
+    padding: 15px 13px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    &:first-child{
+        border-top: 0.3px solid rgba(0, 0, 0, 0.18);
+    }
+    &:not(:last-child){
+        border-bottom: 0.3px solid rgba(0, 0, 0, 0.18);
+    }
+}
+.side__lang .checked__lang {
+    margin-right: 16px;
+    width: 27px;
+    height: 27px;
+    visibility: hidden;
+}
+.side__lang-title {
+}
+.side__help {
+}
+.side__help-title {
+    padding-left: 33px;
+
+    &::before{
+        width: 18px;
+        height: 18px;
+        background-image: url('../images/icons/help.svg');
+    }
+}
+.side__help-btn {
+}
+.side_help-pointer {
+}

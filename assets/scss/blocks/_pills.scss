@@ -6,30 +6,44 @@
     align-items: center;
     justify-content: space-between;
 
+    &:first-child{
+        margin-bottom: 111px;
+    }
     &:nth-child(2){
-        flex-direction: row-reverse;
-        margin-top: -200px;
-        margin-bottom: -200px;
-        margin-right: -120px;
-        padding-left: 180px;
+        margin-bottom: 109px;
+        padding-left:100px;
+    }
+    &:last-child{
+        margin-bottom: 195px;
     }
 
     &:nth-child(odd){
-        padding-right: 180px;
+        padding-right: 90px;
+        flex-direction: row-reverse;
+
     }
 }
 .pills__left {
 
 }
-.pills__phone {
+.pills__phone1 {
+    max-width: 558px;
+    height: auto;
+}
+.pills__phone2 {
+    max-width: 550px;
+    height: auto;
+}
+.pills__phone3 {
+    max-width: 564px;
+    height: auto;
 }
 .pills__right {
     display: flex;
     flex-direction: column;
-    margin-bottom: 300px;
 }
 .number {
-    width: 250px;
+    width: 130px;
 }
 .pills__info {
     display: flex;
@@ -38,47 +52,95 @@
 .pills__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 30px;
+    line-height: 36px;
     color: #10A6C9;
-    margin-bottom: 35px;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 .pills__desc {
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 36px;
     color: #123D53;
-    max-width: 458px;
+    max-width: 356px;
+}
+
+// BREAKPOINT FOR TABLET
+@include breakpoint-down(1024px){
+    .pills__inner {
+    
+        // &:first-child{
+        //     margin-bottom: 111px;
+        // }
+        &:nth-child(2){
+            padding-left: 50px;
+        }
+        // &:last-child{
+        //     margin-bottom: 195px;
+        // }
+    
+        &:nth-child(odd){
+            padding-right: 30px;
+        }
+    }
+    .pills__phone1 {
+        max-width: 408px;
+    }
+    .pills__phone2 {
+        max-width: 400px;
+    }
+    .pills__phone3 {
+        max-width: 414px;
+    }
+    .number {
+        width: 100px;
+    }
+    .pills__title {
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .pills__desc {
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 282px;
+    }
 }
 
 // BREAK POINT FOR MOBILE DESIGN
-@include breakpoint-down(578px){
+@include breakpoint-down(576px){
     .pills{
         margin-bottom: 60px;
     }
     .pills__inner {
         flex-direction: column-reverse;
         justify-content: center;
-    
+        &:first-child{
+            margin-bottom: 60px;
+        }
         &:nth-child(2){
-            flex-direction: column-reverse;
-            margin-top: 0;
-            margin-bottom: 30px;
-            margin-right: 0;
+            flex-direction: column;
+            margin-bottom: 0px;
             padding-left: 0;
         }
     
         &:nth-child(odd){
             padding-right: 0;
+            flex-direction: column;
+        }
+        &:last-child{
+            margin-bottom: 95px;
         }
     }
     .pills__left {
         width: 100%;
         height: auto;
     }
-    .pills__phone {
-        width: 100%;
+    .pills__phone1, .pills__phone2, .pills__phone3 {
+        max-width: 100%;
         height: auto;
         margin-bottom: 50px;
     }

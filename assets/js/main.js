@@ -25,18 +25,19 @@ languagePointer.onclick = () => {
 /* SCROLL REVEAL JS */
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '30px',
+    distance: '50px',
     duration: 2000,
     reset: true
 });
 
 sr.reveal(`.hero__left, .hero__right, .app__responsive,
-            .about__info-block, .about__right,
+            .about__left, .about__right,
             .pills__right-one, .pills__left-one,
             .pills__right-two, .pills__left-two,
             .pills__left-three, .pills__right-three,
             .download__inner, .help__inner,
-            .pair, .devider, .footer__bottom `
+            .pair, .devider, .footer__bottom, side__about,
+            .side__langs, .side__help`
             , {
     interval: 200
 })

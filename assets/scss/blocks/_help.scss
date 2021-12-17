@@ -1,55 +1,57 @@
 .help {
-    margin-bottom: 195px;
+    margin-bottom: 173px;
 }
 .help__inner {
-    background-image: url('../../images/img/mask-group3.jpg');
-    // background-image: url('../../images/img/Mask-Group2.png');
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: start;
-    padding: 89px 120px;
+    // background-image: url('../images/img/Mask-Group2.png');
+    background-image: url('../images/img/helpbg-new.png');
+    padding: 53px 85px;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
     border-radius: 120px;
     backdrop-filter: blur(87px);
-    // background-color: rgba(255, 255, 255, 0.8);
-    background-position: center;
+    background-position: 373px;
     background-repeat: no-repeat;
-    background-size: 500px auto;
+    background-size: 794px 659px;
+    overflow: hidden;
 }
 .help__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
-    line-height: 73px;
+    font-size: 30px;
+    line-height: 36px;
     color: #10A6C9;
-    margin-bottom: 30px;
+    margin-bottom: 21px;
 }
 .help__desc {
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 36px;
     color: #123D53;
-    max-width: 607px;
-    margin-bottom: 60px;
+    max-width: 485px;
+    margin-bottom: 42px;
 }
 .help__contacts {
     font-style: normal;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 30px;
     color: #10A6C9;
-    margin-bottom: 43px;
+    margin-bottom: 21px;
 }
 .help__number, .help__email {
     position: relative;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 26px;
     line-height: 30px;
     color: #123D53;
-    margin-bottom: 11px;
-    display: block;
+    margin-bottom: 12px;
+    display: inline-block;
+    transition: transform ease-in .3s;
+
+    &:hover{
+        transform: translateX(30px)
+    }
 
     &::before{
         content: "";
@@ -65,7 +67,7 @@
 }
 
 .help__number{
-    padding-left: 30px;
+    padding-left: 43px;
     &::before{
         width: 22px;
         height: 19px;
@@ -74,10 +76,10 @@
 }
 
 .help__email{
-    padding-left: 30px;
+    padding-left: 43px;
     &::before{
         width: 22px;
-        height: 17px;
+        height: 16px;
         background-image: url('../images/icons/email-icon.svg');
     }
 }
@@ -89,6 +91,8 @@
     .help__inner{
         padding: 45px 70px;
         border-radius: 100px;
+        background-position: 353px;
+        background-size: 564px 559px;
     }
     .help__title {
         font-size: 26px;

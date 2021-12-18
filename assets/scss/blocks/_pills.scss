@@ -1,5 +1,4 @@
 .pills {
-
 }
 .pills__inner {
     display: flex;
@@ -7,14 +6,14 @@
     justify-content: space-between;
 
     &:first-child{
-        margin-bottom: 111px;
+        margin-bottom: 60px;
     }
     &:nth-child(2){
-        margin-bottom: 109px;
+        margin-bottom: 30px;
         padding-left:100px;
     }
     &:last-child{
-        margin-bottom: 195px;
+        margin-bottom: 125px;
     }
 
     &:nth-child(odd){
@@ -69,16 +68,20 @@
 
 // BREAKPOINT FOR TABLET
 @include breakpoint-down(1024px){
+    .pills{
+        margin-bottom: 310px;
+    }
     .pills__inner {
     
-        // &:first-child{
-        //     margin-bottom: 111px;
-        // }
+        &:first-child{
+            margin-bottom: 100px;
+        }
         &:nth-child(2){
             padding-left: 50px;
+            margin-bottom: 70px;
         }
         // &:last-child{
-        //     margin-bottom: 195px;
+        //     margin-bottom: 190px;
         // }
     
         &:nth-child(odd){
@@ -86,16 +89,16 @@
         }
     }
     .pills__phone1 {
-        max-width: 408px;
+        max-width: 488px;
     }
     .pills__phone2 {
-        max-width: 400px;
+        max-width: 480px;
     }
     .pills__phone3 {
         max-width: 414px;
     }
     .number {
-        width: 100px;
+        width: 150px;
     }
     .pills__title {
         font-size: 24px;
@@ -119,11 +122,11 @@
         flex-direction: column-reverse;
         justify-content: center;
         &:first-child{
-            margin-bottom: 60px;
+            margin-bottom: 70px;
         }
         &:nth-child(2){
             flex-direction: column;
-            margin-bottom: 0px;
+            margin-bottom: 50px;
             padding-left: 0;
         }
     
@@ -132,7 +135,7 @@
             flex-direction: column;
         }
         &:last-child{
-            margin-bottom: 95px;
+            margin-bottom: 0;
         }
     }
     .pills__left {
@@ -147,9 +150,12 @@
     .pills__right {
         margin-bottom: 48px;
     }
+    .pills__right-three{
+        margin-bottom: 0px;
+    }
     .number {
-        width: 125px;
-        margin-bottom: 10px;
+        width: 95px;
+        margin-bottom: 0;
     }
     .pills__info{
         margin-right: auto;

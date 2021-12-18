@@ -1,16 +1,16 @@
 .help {
-    margin-bottom: 173px;
+    padding-bottom: 173px;
 }
 .help__inner {
     // background-image: url('../images/img/Mask-Group2.png');
-    background-image: url('../images/img/helpbg-new.png');
+    background-image: url('../images/img/doribig.png');
     padding: 53px 85px;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
     border-radius: 120px;
     backdrop-filter: blur(87px);
-    background-position: 373px;
+    background-position: 313px;
     background-repeat: no-repeat;
-    background-size: 794px 659px;
+    background-size: 854px 669px;
     overflow: hidden;
 }
 .help__title {
@@ -86,13 +86,13 @@
 
 @include breakpoint-down(1024px){
     .help{
-        margin-bottom: 144px;
+        padding-bottom: 144px;
     }
     .help__inner{
         padding: 45px 70px;
         border-radius: 100px;
-        background-position: 353px;
-        background-size: 564px 559px;
+        background-position: 253px;
+        background-size: 664px 494px;
     }
     .help__title {
         font-size: 26px;
@@ -116,26 +116,42 @@
         color: #123D53;
         margin-bottom: 2px;
     }
+    .help__number{
+        padding-left: 33px;
+        &::before{
+            width: 11px;
+            height: 12px;
+        }
+    }
+    
+    .help__email{
+        padding-left: 33px;
+        &::before{
+            width: 12px;
+            height: 10px;
+        }
+    }
 }
 
 // BREAKPOINT FOR MOBILE DESIGN
-@include breakpoint-down(578px){
+@include breakpoint-down(576px){
 
     .help{
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
     .help__inner {
-        background-image: url('../../images/img/mask-group3.jpg');
         // background-image: url('../../images/img/Mask-Group2.png');
         // display: flex;
         // flex-direction: column;
         // justify-content: start;
-        padding: 29px 34px;
+        padding: 29px 34px 274px 34px;
         border-radius: 40px;
+        background-image: url('../images/img/390.png');
         // background-color: rgba(255, 255, 255, 0.8);
-        background-position: center;
+        // background-position: -48px 264px;
+        background-position: 67% 234px;
         background-repeat: no-repeat;
-        background-size: 500px auto;
+        background-size: 122% 73%;
     }
     .help__title {
         font-size: 20px;

@@ -1,5 +1,6 @@
 .about {
-    margin-bottom: 140px;
+    padding-top: 120px;
+    margin-bottom: 160px;
 }
 .about__inner {
     display: flex;
@@ -45,7 +46,8 @@
 
 @include breakpoint-down(1024px){
     .about{
-        margin-bottom: 100px;
+        margin-bottom: 120px;
+        padding-top: 72px;
     }
     .about__inner {
         padding: 50px 0 50px 74px;
@@ -66,20 +68,22 @@
     .about__desc {
         font-size: 16px;
         line-height: 26px;
-        max-width: 411px;
-
     }
-    .about__right{
-        // max-width: 390px;
+    .hero__right-img{
+        width: 370px;
     }
 }
 
 // BREAK POINTS FOR MOBILE DEVICE
-@include breakpoint-down(578px){
+@include breakpoint-down(576px){
+    .about{
+        padding-top: 64px;
+        margin-bottom: 110px;
+    }
     .about__inner {
         justify-content: center;
         flex-direction: column;
-        padding: 33px 29px 0 29px;
+        padding: 33px 26px 0 26px;
         border-radius: 35px;
     }
     .about__info-block {
@@ -92,13 +96,14 @@
     .about__title {
         font-size: 20px;
         line-height: 24px;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
     .about__desc {
         font-size: 14px;
         line-height: 24px;
     }
     .about__right {
+        margin-top: -15px;
         max-width: 100%;
     }
 }

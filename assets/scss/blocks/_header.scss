@@ -2,7 +2,6 @@
 header {
     width: 100%;
     background: linear-gradient(330.96deg, #FFFFFF -9.19%, #CBF5FF 33.38%, rgba(255, 255, 255, 0.17) 111.72%);
-    margin-bottom: 120px;
 }
 
 // .header{
@@ -286,11 +285,11 @@ header {
 /* break point */
 @include breakpoint-down(1024px){
     header{
-        margin-bottom: 72px;
+        // margin-bottom: 72px;
     }
 
     .header__inner{
-        margin-top: 46px;
+        padding-top: 46px;
     }
     .header__left {
         width: 167px;
@@ -389,7 +388,7 @@ header {
         display: block;
     }
     .header__inner{
-        margin-top: 30px;
+        padding-top: 30px;
         margin-bottom: 55px;
     }
     .header__left {

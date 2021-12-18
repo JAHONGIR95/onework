@@ -1,6 +1,25 @@
-.onebg{
-    background-image: url('../images/img/1366.jpg');
+// .onebg{
+    //     // background-color: #E5E5E5;
+//     background-image: url('../images/img/1366.jpg');
+//     background-repeat: no-repeat;
+//     background-position: 0 0;
+//     background-size: cover;
+// }
+.main{
+    background-image: url('../images/img/screenbg11.jpg');
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
+}   
+// MEDIA FOR TABLET
+@include breakpoint-down(1024px){
+    .main{
+        background-image: url('../images/img/screenbg22.jpg');
+    }
+}
+// MEDIA FOR MOBILE
+@include breakpoint-down(576px){
+    .main{
+        background-image: url('../images/img/screenbg33.jpg');
+    }
 }

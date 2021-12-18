@@ -4,20 +4,31 @@ const sideBar = document.querySelector('.side__nav')
 const burgerMenu = document.querySelector('.burger-menu')
 const languagePointer = document.querySelector('.side__langs-btn')
 const languageWrapper = document.querySelector('.side__langs-wrapper')
+const body = document.querySelector('.body')
+
+const allLangs = document.querySelectorAll('.side__lang')
 
 /* SIDEBAR LOGIC */
 /* SIDEBAR OPEN AND CLOSE */
 burgerMenu.onclick = () => {
     sideBar.classList.add('open')
+    body.classList.add('scrolling')
 }
 burgerClose.onclick = () => {
     sideBar.classList.remove('open')
+    body.classList.remove('scrolling')
 }
 /* LANGUAGE LIST OPEN AND CLOSE */
 languagePointer.onclick = () => {
     languageWrapper.classList.toggle('open')
     languagePointer.classList.toggle('rotate')
 }
+
+allLangs.forEach(item => {
+    item.onclick = () => {
+        sideBar.classList.remove('open')
+    }
+})
 
 
 

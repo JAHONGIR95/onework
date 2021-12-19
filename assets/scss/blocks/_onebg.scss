@@ -10,7 +10,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-}   
+} 
+
+@include breakpoint-down(1535px){
+    background-image: url('../images/img/screenbg11.jpg');
+}
 // MEDIA FOR TABLET
 @include breakpoint-down(1024px){
     .main{

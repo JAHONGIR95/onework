@@ -1139,7 +1139,6 @@ header {
   width: 100vw;
   height: 0;
   background: rgba(18, 61, 83, 0.56);
-  position: absolute;
   -webkit-transition: height ease-in .7s;
   transition: height ease-in .7s;
   overflow: hidden;

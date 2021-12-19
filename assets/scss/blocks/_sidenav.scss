@@ -4,7 +4,7 @@
     width: 100vw;
     height: 0;
     background: rgba(18, 61, 83, 0.56);
-    position: absolute;
+    // position: absolute;
     transition: height ease-in .7s;
     overflow: hidden;
     backdrop-filter: blur(8px);
@@ -101,9 +101,11 @@
     padding: 6px 8px;
     display: inline-block;
 }
-.side__langs {
+// .side__langs {
+//     opacity: 1 !important;
+//     transform: none !important;
     
-}
+// }
 .side__langs-main {
 
 }

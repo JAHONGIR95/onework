@@ -71,8 +71,7 @@ sr.reveal(` .app__responsive,
             .pills__right-two, .pills__left-two,
             .pills__left-three, .pills__right-three,
             .download__inner, .help__inner,
-            .pair, .devider, .footer__bottom, side__about,
-            .side__langs, .side__help`
+            .pair, .devider, .footer__bottom`
             , {
     interval: 200
 })

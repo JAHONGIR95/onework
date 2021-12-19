@@ -101,14 +101,6 @@
     padding: 6px 8px;
     display: inline-block;
 }
-// .side__langs {
-//     opacity: 1 !important;
-//     transform: none !important;
-    
-// }
-.side__langs-main {
-
-}
 .side__langs-title {
     padding-left: 33px;
    
@@ -123,8 +115,6 @@
     &.rotate{
         transform: rotate(90deg)
     }
-}
-.side__langs-pointer {
 }
 .side__langs-wrapper {
     height: 0;
@@ -151,10 +141,6 @@
     height: 27px;
     visibility: hidden;
 }
-.side__lang-title {
-}
-.side__help {
-}
 .side__help-title {
     padding-left: 33px;
 
@@ -163,8 +149,4 @@
         height: 18px;
         background-image: url('../images/icons/help.svg');
     }
-}
-.side__help-btn {
-}
-.side_help-pointer {
 }

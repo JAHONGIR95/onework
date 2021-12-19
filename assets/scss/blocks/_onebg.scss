@@ -12,9 +12,9 @@
     background-size: cover;
 } 
 
-@include breakpoint-down(1535px){
-    background-image: url('../images/img/screenbg11.jpg');
-}
+// @include breakpoint-up(1535px){
+//     background-image: url('../images/img/screenbg11.jpg');
+// }
 // MEDIA FOR TABLET
 @include breakpoint-down(1024px){
     .main{

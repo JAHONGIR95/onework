@@ -478,10 +478,6 @@ img {
   background-size: cover;
 }
 
-@media only screen and (max-width: 1535px) {
-  background-image: url("../images/img/screenbg11.jpg");
-}
-
 @media only screen and (max-width: 1024px) {
   .main {
     background-image: url("../images/img/screenbg22.jpg");

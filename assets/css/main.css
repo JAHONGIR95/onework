@@ -504,7 +504,7 @@ img {
           align-items: center;
   background: #000;
   position: fixed;
-  z-index: 111;
+  z-index: 111111;
 }
 
 .wave {
@@ -592,6 +592,15 @@ img {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .wave {
+    width: 4px;
+    height: 60px;
+    margin: 8px;
+    border-radius: 18px;
+  }
+}
+
 /* HEADER */
 header {
   width: 100%;
@@ -609,7 +618,7 @@ header {
 .fixed__header.scroll-header {
   background: #CBF5FF;
   top: -35px;
-  opacity: .5;
+  opacity: 1;
   -webkit-transition: opacity ease-in .2s;
   transition: opacity ease-in .2s;
 }
@@ -1753,7 +1762,7 @@ header {
 
 @media only screen and (max-width: 576px) {
   .download {
-    margin-bottom: 52px;
+    margin-bottom: 0;
   }
   .download__inner {
     margin-bottom: 0;
@@ -1928,6 +1937,7 @@ header {
 @media only screen and (max-width: 576px) {
   .help {
     margin-bottom: 0px;
+    padding-top: 52px;
   }
   .help__inner {
     padding: 29px 34px 274px 34px;

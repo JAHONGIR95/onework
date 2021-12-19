@@ -64,14 +64,38 @@ const sr = ScrollReveal({
     duration: 2000,
     reset: true
 });
-
-sr.reveal(` .app__responsive,
-            .about__left, .about__right,
-            .pills__right-one, .pills__left-one,
-            .pills__right-two, .pills__left-two,
-            .pills__left-three, .pills__right-three,
-            .download__inner, .help__inner,
-            .pair, .devider, .footer__bottom`
-            , {
-    interval: 200
+let screen;
+window.addEventListener('resize', function() {
+    screen = window.innerWidth;
+    screenSized()
 })
+
+screenSized()
+function screenSized () {
+
+    if(screen <= 576){
+        sr.reveal(` .hero__right, 
+                    .hero__text, .app__responsive,
+                    .about__left, .about__right,
+                    .pills__right-one, .pills__left-one,
+                    .pills__right-two, .pills__left-two,
+                    .pills__left-three, .pills__right-three,
+                    .download__inner, .help__inner,
+                    .pair, .devider, .footer__bottom`
+                    , {
+            interval: 200
+        })
+    } else {
+        sr.reveal(` .hero__right, .hero__left,
+                    .about__left, .about__right,
+                    .pills__right-one, .pills__left-one,
+                    .pills__right-two, .pills__left-two,
+                    .pills__left-three, .pills__right-three,
+                    .download__inner, .help__inner,
+                    .pair, .devider, .footer__bottom`
+                    , {
+            interval: 200
+        })
+    }
+}
+

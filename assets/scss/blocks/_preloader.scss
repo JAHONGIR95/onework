@@ -6,7 +6,7 @@
     align-items: center;
     background: #000;
     position: fixed;
-    z-index: 111;
+    z-index: 111111;
 }
 
 .wave {
@@ -77,3 +77,12 @@
 //     z-index: 111;
 
 // }
+
+@include breakpoint-down(1024px){
+    .wave {
+        width: 4px;
+        height: 60px;
+        margin: 8px;
+        border-radius: 18px;
+    }
+}

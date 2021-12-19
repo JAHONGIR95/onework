@@ -83,7 +83,7 @@
 // BREAK POINT FOR MOBILE DESIGN
 @include breakpoint-down(576px){
     .download{
-        margin-bottom: 52px;
+        margin-bottom: 0;
     }
     .download__inner {
         margin-bottom: 0;

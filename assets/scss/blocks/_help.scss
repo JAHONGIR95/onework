@@ -85,6 +85,12 @@
     }
 }
 
+@include breakpoint-up(1535px){
+    .help{
+        padding-top: 160px;
+    }
+}
+
 @include breakpoint-down(1024px){
     .help{
         padding-bottom: 144px;

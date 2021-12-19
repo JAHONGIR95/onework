@@ -44,6 +44,11 @@
 .about__img {
 }
 
+@include breakpoint-up(1535px){
+    padding-top: 160px;
+    margin-bottom: 180px;
+}
+
 @include breakpoint-down(1024px){
     .about{
         margin-bottom: 120px;

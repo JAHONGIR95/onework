@@ -15,17 +15,12 @@ header {
     z-index: 9999;
     height: 110px;
     position: fixed;
+    transition: all ease .3s;
     top: 0;
     
     &.scroll-header{
         background: #CBF5FF;
-        top: -35px;
-        opacity: 1;
-        transition: opacity ease-in .2s;
-
-        &:hover{
-            opacity: 1;
-        }
+        // top: -35px;
         
     }
 }
@@ -313,6 +308,10 @@ header {
     display: none;
 }
 
+@include breakpoint-up(1535px){
+
+}
+
 /* break point */
 @include breakpoint-down(1024px){
     header{
@@ -422,14 +421,7 @@ header {
         
         &.scroll-header{
             background: #CBF5FF;
-            top: -10px;
-            opacity: 1;
-            transition: opacity ease-in .2s;
-    
-            &:hover{
-                opacity: 1;
-            }
-            
+            // top: -10px;
         }
     }
     .burger-menu{

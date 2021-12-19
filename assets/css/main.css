@@ -612,19 +612,13 @@ header {
   z-index: 9999;
   height: 110px;
   position: fixed;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
   top: 0;
 }
 
 .fixed__header.scroll-header {
   background: #CBF5FF;
-  top: -35px;
-  opacity: 1;
-  -webkit-transition: opacity ease-in .2s;
-  transition: opacity ease-in .2s;
-}
-
-.fixed__header.scroll-header:hover {
-  opacity: 1;
 }
 
 .header__inner {
@@ -1075,13 +1069,6 @@ header {
   }
   .fixed__header.scroll-header {
     background: #CBF5FF;
-    top: -10px;
-    opacity: 1;
-    -webkit-transition: opacity ease-in .2s;
-    transition: opacity ease-in .2s;
-  }
-  .fixed__header.scroll-header:hover {
-    opacity: 1;
   }
   .burger-menu {
     display: block;
@@ -1395,6 +1382,11 @@ header {
   max-width: 536px;
 }
 
+@media only screen and (min-width: 1535px) {
+  padding-top: 160px;
+  margin-bottom: 180px;
+}
+
 @media only screen and (max-width: 1024px) {
   .about {
     margin-bottom: 120px;
@@ -1549,6 +1541,25 @@ header {
   line-height: 36px;
   color: #123D53;
   max-width: 356px;
+}
+
+@media only screen and (min-width: 1535px) {
+  .pills__inner:first-child {
+    margin-bottom: 100px;
+  }
+  .pills__inner:nth-child(2) {
+    margin-bottom: 60px;
+  }
+  .pills__inner:last-child {
+    margin-bottom: 125px;
+  }
+  .pills__inner:nth-child(odd) {
+    padding-right: 90px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1884,6 +1895,12 @@ header {
   width: 22px;
   height: 16px;
   background-image: url("../images/icons/email-icon.svg");
+}
+
+@media only screen and (min-width: 1535px) {
+  .help {
+    padding-top: 160px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

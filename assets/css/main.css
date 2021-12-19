@@ -490,10 +490,132 @@ img {
   }
 }
 
+.center {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+  position: fixed;
+  z-index: 111;
+}
+
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  -webkit-animation: wave 1s linear infinite;
+          animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+
+.wave:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
 /* HEADER */
 header {
   width: 100%;
   background: linear-gradient(330.96deg, #FFFFFF -9.19%, #CBF5FF 33.38%, rgba(255, 255, 255, 0.17) 111.72%);
+}
+
+.fixed__header {
+  width: 100%;
+  z-index: 9999;
+  height: 110px;
+  position: fixed;
+  top: 0;
+}
+
+.fixed__header.scroll-header {
+  background: #CBF5FF;
+  top: -35px;
+  opacity: .5;
+  -webkit-transition: opacity ease-in .2s;
+  transition: opacity ease-in .2s;
+}
+
+.fixed__header.scroll-header:hover {
+  opacity: 1;
 }
 
 .header__inner {
@@ -742,6 +864,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 157px;
 }
 
 .hero__left {
@@ -897,7 +1020,7 @@ header {
     margin-bottom: 81px;
   }
   .hero__right-img {
-    max-width: 492px;
+    width: 474px;
   }
 }
 
@@ -937,6 +1060,20 @@ header {
 }
 
 @media only screen and (max-width: 576px) {
+  .fixed__header {
+    height: 80px;
+    top: 0;
+  }
+  .fixed__header.scroll-header {
+    background: #CBF5FF;
+    top: -10px;
+    opacity: 1;
+    -webkit-transition: opacity ease-in .2s;
+    transition: opacity ease-in .2s;
+  }
+  .fixed__header.scroll-header:hover {
+    opacity: 1;
+  }
   .burger-menu {
     display: block;
   }
@@ -1008,8 +1145,9 @@ header {
   overflow: hidden;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
-  position: absolute;
-  z-index: 999;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
 }
 
 .side__nav.open {
@@ -1274,9 +1412,6 @@ header {
     font-size: 16px;
     line-height: 26px;
   }
-  .hero__right-img {
-    width: 370px;
-  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1533,7 +1668,6 @@ header {
           backdrop-filter: blur(141px);
   border-radius: 60px;
   padding: 27px 95px;
-  margin-bottom: 140px;
 }
 
 .download__left {
@@ -1647,10 +1781,11 @@ header {
 
 .help {
   padding-bottom: 173px;
+  padding-top: 140px;
 }
 
 .help__inner {
-  background-image: url("../images/img/doribig.png");
+  background: #fff url("../images/img/doribig.png");
   padding: 53px 85px;
   -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.04);
@@ -1798,7 +1933,7 @@ header {
   .help__inner {
     padding: 29px 34px 274px 34px;
     border-radius: 40px;
-    background-image: url("../images/img/390.png");
+    background: #fff url("../images/img/390.png");
     background-position: 67% 234px;
     background-repeat: no-repeat;
     background-size: 122% 73%;

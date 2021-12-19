@@ -4,13 +4,43 @@ header {
     background: linear-gradient(330.96deg, #FFFFFF -9.19%, #CBF5FF 33.38%, rgba(255, 255, 255, 0.17) 111.72%);
 }
 
-// .header{
-    //   background-image: url('../images/img/mask-group3.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-// }
+.header{
+    
+}
+.nav-menu{
+}
+
+.fixed__header{
+    width: 100%;
+    z-index: 9999;
+    height: 110px;
+    position: fixed;
+    top: 0;
+    
+    &.scroll-header{
+        background: #CBF5FF;
+        top: -35px;
+        opacity: .5;
+        transition: opacity ease-in .2s;
+
+        &:hover{
+            opacity: 1;
+        }
+        
+    }
+}
 
 .header__inner{
+    // position: fixed;
+    // width: inherit;
+    // max-width: inherit;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // z-index: 99;
+    // padding: 0 calc((100% - 1120px) / 2);
+    // overflow: hidden;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -204,6 +234,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 157px;
 }
 .hero__left {
     margin-top: 89px;
@@ -342,7 +373,8 @@ header {
         margin-bottom: 81px;
     }
     .hero__right-img{
-        max-width: 492px;
+        // max-width: 492px;
+        width: 474px;
     }
 }
 
@@ -384,6 +416,22 @@ header {
 
 // BREAK POINT MOBILE
 @include breakpoint-down(576px){
+    .fixed__header{
+        height: 80px;
+        top: 0;
+        
+        &.scroll-header{
+            background: #CBF5FF;
+            top: -10px;
+            opacity: 1;
+            transition: opacity ease-in .2s;
+    
+            &:hover{
+                opacity: 1;
+            }
+            
+        }
+    }
     .burger-menu{
         display: block;
     }

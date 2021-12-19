@@ -8,8 +8,10 @@
     transition: height ease-in .7s;
     overflow: hidden;
     backdrop-filter: blur(8px);
-    position: absolute;
-    z-index: 999;
+    position: fixed;
+    top: 0;
+
+    z-index: 99999;
 
     &.open{
         height: 100vh;

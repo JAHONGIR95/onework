@@ -6,7 +6,10 @@ const languagePointer = document.querySelector('.side__langs-btn')
 const languageWrapper = document.querySelector('.side__langs-wrapper')
 const body = document.querySelector('.body')
 
+const loader =  document.querySelector('.center')
+
 const allLangs = document.querySelectorAll('.side__lang')
+const allClick = document.querySelectorAll('.res-click')
 
 /* SIDEBAR LOGIC */
 /* SIDEBAR OPEN AND CLOSE */
@@ -27,10 +30,31 @@ languagePointer.onclick = () => {
 allLangs.forEach(item => {
     item.onclick = () => {
         sideBar.classList.remove('open')
+        body.classList.remove('scrolling')
+    }
+})
+allClick.forEach(item => {
+    item.onclick = () => {
+        sideBar.classList.remove('open')
+        body.classList.remove('scrolling')
     }
 })
 
+window.addEventListener("load", function() {
+    loader.style.display = 'none'
+})
 
+
+// ==== scroll changing header ====
+function scrollHeader(){
+    const header = document.querySelector('.fixed__header');
+
+    if(this.scrollY >= 100)
+        header.classList.add('scroll-header');
+    else
+        header.classList.remove('scroll-header');
+}
+window.addEventListener('scroll', scrollHeader)
 
 
 /* SCROLL REVEAL JS */
@@ -41,7 +65,7 @@ const sr = ScrollReveal({
     reset: true
 });
 
-sr.reveal(`.hero__left, .hero__right, .app__responsive,
+sr.reveal(` .app__responsive,
             .about__left, .about__right,
             .pills__right-one, .pills__left-one,
             .pills__right-two, .pills__left-two,

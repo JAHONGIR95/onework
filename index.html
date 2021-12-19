@@ -8,6 +8,19 @@
   <title>drugsnote</title>
 </head>
 <body class="body">
+  <div class="center">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+  <!-- <div id="preloader"></div> -->
   <div class="onebg">
     <header>
       <div class="side__nav">
@@ -17,12 +30,12 @@
               <a href="#" class="side__button">Login</a>
               <a href="#" class="side__button--outlined">Sing up</a>
             </div>
-            <div class="side__about">
+            <a href="#about" class="side__about res-click">
               <p class="side__about-title">About us</p>
               <span class="side__about-btn">
                 <img src="./assets/images/icons/pointer.svg" alt="" class="side_about-pointer">
               </span>
-            </div>
+            </a>
             <div class="side__langs">
               <div class="side__langs-main">
                 <p class="side__langs-title">Language</p>
@@ -33,37 +46,38 @@
               <div class="side__langs-wrapper">
                 <div class="side__lang">
                   <img src="./assets/images/icons/radio-tek.svg" style="visibility: visible" class="checked__lang" alt="">
-                  <a href="#" class="side__lang-title">English</a>
+                  <div class="side__lang-title">English</div>
                 </div>
                 <div class="side__lang">
                   <img src="" class="checked__lang" alt="">
-                  <a href="#" class="side__lang-title">Korean</a>
+                  <div class="side__lang-title">Korean</div>
                 </div>
                 <div class="side__lang">
                   <img src="" class="checked__lang" alt="">
-                  <a href="#" class="side__lang-title">Russian</a>
+                  <div class="side__lang-title">Russian</div>
                 </div>
                 <div class="side__lang">
                   <img src="" class="checked__lang" alt="">
-                  <a href="#" class="side__lang-title">Uzbek</a>
+                  <div class="side__lang-title">Uzbek</div>
                 </div>
                 <div class="side__lang">
                   <img src="" class="checked__lang" alt="">
-                  <a href="#" class="side__lang-title">Arabic</a>
+                  <div class="side__lang-title">Arabic</div>
                 </div>
               </div>
             </div>
-            <div class="side__help">
+            <a href="#help" class="side__help res-click">
               <p class="side__help-title">Help</p>
               <span class="side__help-btn">
                 <img src="./assets/images/icons/pointer.svg" alt="" class="side_help-pointer">
               </span>
-            </div>
+            </a>
         </div>
       </div>
       <section class="header">
         <h2 class="visually-hidden">header</h2>
-        <div class="container">
+        <div class="fixed__header">
+          <div class="container"> 
           <div class="header__inner">
             <a href="#" class="header__left">
               <img src="./assets/images/logo/header-logo.svg" class="header__logo" alt="drugstone logo">
@@ -71,8 +85,8 @@
             <div class="header__right">
               <nav class="nav">
                 <ul class="nav__list">
-                  <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                  <li class="nav__item"><a href="#" class="nav__link">Help</a></li>
+                  <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                  <li class="nav__item"><a href="#help" class="nav__link">Help</a></li>
                   <li class="nav__item nav__lang">
                     <a href="#" class="nav__link nav__lang-menu">Language</a>
                     <div class="langs__wrapper">
@@ -92,6 +106,9 @@
             </div>
             <img src="./assets/images/icons/burger.svg" alt="" class="burger-menu">
           </div>
+        </div>
+      </div>
+        <div class="container">
           <div class="hero">
             <div class="hero__left">
               <h1 class="hero__title">Be reminded of your daily intake of medicine</h1>
@@ -121,7 +138,7 @@
       </section>
     </header>
     <main class="main">
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about__inner">
             <div class="about__left">
@@ -199,7 +216,7 @@
           </div>
         </div>
       </section>
-      <section class="help">
+      <section class="help" id="help">
         <div class="container">
           <div class="help__inner">
             <h2 class="help__title">Help</h2>
@@ -290,7 +307,7 @@
   </footer>
 
   <!-- JAVA SCRIPT LINKS -->
-  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 </html>

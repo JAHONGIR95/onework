@@ -278,6 +278,15 @@ footer {
     }
 }
 
+@include breakpoint-down(768px){
+    .footer__logo {
+        width: 100px;
+    }
+    .footer__about {
+        margin-right: 30px;
+    }
+}
+
 // BREAK POINT FOR MOBILE
 @include breakpoint-down(578px) {
 

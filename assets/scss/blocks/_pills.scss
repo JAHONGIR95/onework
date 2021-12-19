@@ -10,7 +10,7 @@
     }
     &:nth-child(2){
         margin-bottom: 30px;
-        padding-left:100px;
+        padding-left: 100px;
     }
     &:last-child{
         margin-bottom: 125px;
@@ -23,7 +23,6 @@
     }
 }
 .pills__left {
-
 }
 .pills__phone1 {
     max-width: 558px;
@@ -131,6 +130,37 @@
         font-size: 18px;
         line-height: 30px;
         max-width: 282px;
+    }
+}
+
+@include breakpoint-down(768px){
+    .pills{
+        margin-bottom: 110px;
+    }
+    .pills__inner {
+    
+        &:first-child{
+            margin-bottom: 0px;
+        }
+        &:nth-child(2){
+            margin-bottom: 0px;
+            padding-left: 0;
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        &:nth-child(odd){
+            padding-right: 0px;
+        }
+    }
+    .pills__phone1 {
+        max-width: 370px;
+    }
+    .pills__phone2 {
+        max-width: 370px;
+    }
+    .pills__phone3 {
+        max-width: 370px;
     }
 }
 

@@ -1414,6 +1414,29 @@ header {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .about {
+    margin-bottom: 50px;
+  }
+  .about__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 70px;
+    border-radius: 100px;
+  }
+  .about__info-block {
+    max-width: 100%;
+  }
+  .about__info-block:first-child {
+    max-width: 100%;
+  }
+  .about__right {
+    max-width: 406px;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .about {
     padding-top: 64px;
@@ -1601,6 +1624,34 @@ header {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .pills {
+    margin-bottom: 110px;
+  }
+  .pills__inner:first-child {
+    margin-bottom: 0px;
+  }
+  .pills__inner:nth-child(2) {
+    margin-bottom: 0px;
+    padding-left: 0;
+  }
+  .pills__inner:last-child {
+    margin-bottom: 0px;
+  }
+  .pills__inner:nth-child(odd) {
+    padding-right: 0px;
+  }
+  .pills__phone1 {
+    max-width: 370px;
+  }
+  .pills__phone2 {
+    max-width: 370px;
+  }
+  .pills__phone3 {
+    max-width: 370px;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .pills {
     margin-bottom: 60px;
@@ -1768,6 +1819,22 @@ header {
     width: 224px;
     right: 75px;
     top: -54px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .download {
+    margin-bottom: 0;
+  }
+  .download__inner {
+    padding: 27px 45px;
+    border-radius: 40px;
+  }
+  .wooden-iphone {
+    max-width: 228px;
+    position: absolute;
+    right: 45px;
+    top: -38px;
   }
 }
 
@@ -1948,6 +2015,19 @@ header {
   .help__email::before {
     width: 12px;
     height: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .help__inner {
+    padding: 23px 45px;
+    border-radius: 80px;
+    background-position: 123px;
+    background-repeat: no-repeat;
+    background-size: 754px 569px;
+  }
+  .help__desc {
+    max-width: 320px;
   }
 }
 
@@ -2327,6 +2407,15 @@ footer {
   }
   .footer__app-img {
     width: 109px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__logo {
+    width: 100px;
+  }
+  .footer__about {
+    margin-right: 30px;
   }
 }
 

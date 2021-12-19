@@ -140,6 +140,19 @@
     }
 }
 
+@include breakpoint-down(768px){
+    .help__inner {
+        padding: 23px 45px;
+        border-radius: 80px;
+        background-position: 123px;
+        background-repeat: no-repeat;
+        background-size: 754px 569px;
+    }
+    .help__desc{
+        max-width: 320px;
+    }
+}
+
 // BREAKPOINT FOR MOBILE DESIGN
 @include breakpoint-down(576px){
 

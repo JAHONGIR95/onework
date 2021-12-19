@@ -76,6 +76,26 @@
     }
 }
 
+@include breakpoint-down(768px){
+    .about{
+        margin-bottom: 50px;
+    }
+    .about__inner{
+        flex-direction: column;
+        padding: 40px 70px;
+        border-radius: 100px;
+    }
+    .about__info-block{
+        max-width: 100%;
+        &:first-child{
+            max-width: 100%;
+        }
+    }
+    .about__right {
+        max-width: 406px;
+    }
+}
+
 // BREAK POINTS FOR MOBILE DEVICE
 @include breakpoint-down(576px){
     .about{

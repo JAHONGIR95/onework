@@ -80,6 +80,22 @@
     }
 }
 
+@include breakpoint-down(768px){
+    .download {
+        margin-bottom: 0;
+    }
+    .download__inner{
+        padding: 27px 45px;
+        border-radius: 40px;
+    }
+    .wooden-iphone {
+        max-width: 228px;
+        position: absolute;
+        right: 45px;
+        top: -38px;
+    }
+}
+
 // BREAK POINT FOR MOBILE DESIGN
 @include breakpoint-down(576px){
     .download{

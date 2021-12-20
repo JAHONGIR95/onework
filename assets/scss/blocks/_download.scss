@@ -50,7 +50,7 @@
 // break point
 @include breakpoint-down(1024px){
     .download {
-        margin-bottom: 140px;
+        margin-bottom: 0px;
         border-radius: 50px;
     }
     .download__inner {

@@ -1384,7 +1384,7 @@ header {
 
 @media only screen and (max-width: 1024px) {
   .about {
-    margin-bottom: 120px;
+    margin-bottom: 10px;
     padding-top: 72px;
   }
   .about__inner {
@@ -1563,14 +1563,14 @@ header {
 
 @media only screen and (max-width: 1024px) {
   .pills {
-    margin-bottom: 310px;
+    margin-bottom: 210px;
   }
   .pills__inner:first-child {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
   .pills__inner:nth-child(2) {
     padding-left: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 10px;
   }
   .pills__inner:nth-child(odd) {
     padding-right: 30px;
@@ -1582,7 +1582,7 @@ header {
     max-width: 480px;
   }
   .pills__phone3 {
-    max-width: 414px;
+    max-width: 474px;
   }
   .number {
     width: 150px;
@@ -1642,6 +1642,7 @@ header {
             justify-content: center;
   }
   .pills__inner:first-child {
+    margin-top: -10px;
     margin-bottom: 40px;
   }
   .pills__inner:nth-child(2) {
@@ -1670,7 +1671,7 @@ header {
   .pills__phone1, .pills__phone2, .pills__phone3 {
     max-width: 100%;
     height: auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .pills__right {
     margin-bottom: 48px;
@@ -1775,7 +1776,7 @@ header {
 
 @media only screen and (max-width: 1024px) {
   .download {
-    margin-bottom: 140px;
+    margin-bottom: 0px;
     border-radius: 50px;
   }
   .download__inner {

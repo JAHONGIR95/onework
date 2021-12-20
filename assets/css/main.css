@@ -1561,6 +1561,26 @@ header {
   max-width: 356px;
 }
 
+@media only screen and (min-width: 1535px) {
+  .pills__inner:first-child {
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  .pills__inner:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  .pills__inner:last-child {
+    margin-bottom: 125px;
+  }
+  .pills__inner:nth-child(odd) {
+    padding-right: 90px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .pills {
     margin-bottom: 210px;

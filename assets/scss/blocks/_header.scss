@@ -289,9 +289,9 @@ header {
     display: none;
 }
 
-@include breakpoint-up(1535px){
+// @include breakpoint-up(1535px){
 
-}
+// }
 
 /* break point */
 @include breakpoint-down(1024px){

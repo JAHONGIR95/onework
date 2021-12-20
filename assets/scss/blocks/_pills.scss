@@ -63,26 +63,26 @@
     max-width: 356px;
 }
 
-@include breakpoint-up(1535px){
-    .pills__inner {
+// @include breakpoint-up(1535px){
+//     .pills__inner {
     
-        &:first-child{
-            margin-bottom: 100px;
-        }
-        &:nth-child(2){
-            margin-bottom: 60px;
-        }
-        &:last-child{
-            margin-bottom: 125px;
-        }
+//         &:first-child{
+//             margin-bottom: 100px;
+//         }
+//         &:nth-child(2){
+//             margin-bottom: 60px;
+//         }
+//         &:last-child{
+//             margin-bottom: 125px;
+//         }
     
-        &:nth-child(odd){
-            padding-right: 90px;
-            flex-direction: row-reverse;
+//         &:nth-child(odd){
+//             padding-right: 90px;
+//             flex-direction: row-reverse;
     
-        }
-    }
-}
+//         }
+//     }
+// }
 
 // BREAKPOINT FOR TABLET
 @include breakpoint-down(1024px){
@@ -171,11 +171,12 @@
         flex-direction: column-reverse;
         justify-content: center;
         &:first-child{
-            margin-bottom: 70px;
+            margin-bottom: 0px;
         }
         &:nth-child(2){
             flex-direction: column;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
+            margin-top: -20px;
             padding-left: 0;
         }
     

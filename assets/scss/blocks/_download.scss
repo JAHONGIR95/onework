@@ -96,6 +96,7 @@
 @include breakpoint-down(576px){
     .download{
         margin-bottom: 0;
+        margin-top: -40px;
     }
     .download__inner {
         margin-bottom: 0;

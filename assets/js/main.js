@@ -60,7 +60,7 @@ let screenSized = window.innerWidth;
 const navbar = document.querySelector(".fixed__header")
 window.addEventListener("scroll", function () {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop
-  console.log('top => ', scrollTop, '  last => ', lastScrollTop);
+  // console.log('top => ', scrollTop, '  last => ', lastScrollTop);
   if (scrollTop > lastScrollTop) {
     navbar.style.top = "-110px"
   } else {
@@ -75,23 +75,28 @@ window.addEventListener("scroll", function () {
   lastScrollTop = scrollTop
 })
 
+/* AOS */
+AOS.init({
+  duration: 1000,
+  infinite: true
+});
 
 /* SCROLL REVEAL JS */
-const sr = ScrollReveal({
-  origin: 'bottom',
-  distance: "30px",
-  duration: 1000,
-  reset: true,
-})
+// const sr = ScrollReveal({
+//   origin: 'bottom',
+//   distance: "30px",
+//   duration: 1500,
+//   reset: true,
+// })
 
-sr.reveal(
-  ` .hero__right, .hero__text, .app__responsive,
-            .about__left, .about__right,
-            .pills__inner,
-            .download__inner, .help__inner,
-            .pair, .devider, .footer__bottom`,
-  {
-    interval: 200,
-  }
-)
+// sr.reveal(
+//   ` .hero__right, .hero__text,
+//             .about__left, .about__right,
+//             .pills__inner,
+//             .download__inner, .help__inner,
+//             .pair, .devider, .footer__bottom`,
+//   {
+//     interval: 200,
+//   }
+// )
 

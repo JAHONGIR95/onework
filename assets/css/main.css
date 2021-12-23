@@ -457,6 +457,7 @@ img {
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1072,8 +1073,6 @@ header {
   }
   .burger-menu {
     display: block;
-    position: relative;
-    right: 71px;
   }
   .header__inner {
     padding-top: 30px;

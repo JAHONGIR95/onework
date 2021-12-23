@@ -1093,6 +1093,7 @@ header {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding-top: 115px;
   }
   .hero__left {
     margin-bottom: 35px;

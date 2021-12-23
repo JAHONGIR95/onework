@@ -457,7 +457,6 @@ img {
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -889,7 +888,7 @@ header {
   line-height: 132.52%;
   color: #00A9D1;
   max-width: 474px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .hero__desc {
@@ -998,7 +997,7 @@ header {
     font-size: 30px;
     line-height: 132%;
     max-width: 406px;
-    margin-bottom: 17px;
+    margin-bottom: 12px;
   }
   .hero__desc {
     font-size: 18px;
@@ -1437,7 +1436,7 @@ header {
 @media only screen and (max-width: 576px) {
   .about {
     padding-top: 64px;
-    margin-bottom: 110px;
+    margin-bottom: 60px;
   }
   .about__inner {
     -webkit-box-pack: center;
@@ -1652,6 +1651,7 @@ header {
 
 @media only screen and (max-width: 576px) {
   .pills {
+    overflow: hidden;
     margin-bottom: 60px;
   }
   .pills__inner {
@@ -1664,7 +1664,7 @@ header {
             justify-content: center;
   }
   .pills__inner:first-child {
-    margin-top: -10px;
+    padding-top: 40px;
     margin-bottom: 40px;
   }
   .pills__inner:nth-child(2) {

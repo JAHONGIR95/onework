@@ -77,8 +77,8 @@ window.addEventListener("scroll", function () {
 
 /* AOS */
 AOS.init({
-  duration: 1000,
-  infinite: true
+  duration: 1200,
+  easing: 'ease-in-sine'
 });
 
 /* SCROLL REVEAL JS */
